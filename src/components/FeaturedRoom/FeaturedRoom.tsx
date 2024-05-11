@@ -15,7 +15,7 @@ const FeaturedRoom: FC<Props> = props => {
 
   return (
     <section className='flex md:flex-row flex-col px-4 py-10 items-center gap-12 container mx-auto'>
-      <div className='md:grid gap-8 grid-cols-1'>
+      {/* <div className='md:grid gap-8 grid-cols-1'>
         <div className='rounded-2xl overflow-hidden h-48 mb-4 md:mb-0'>
           <Image
             src={featuredRoom.coverImage.url}
@@ -68,7 +68,13 @@ const FeaturedRoom: FC<Props> = props => {
             More Details
           </Link>
         </div>
-      </div>
+      </div> */}
+           <Link
+            href={`/rooms/${featuredRoom.slug.current}`}
+            className='border h-fit text-center border-tertiary-dark text-tertiary-dark px-3 py-2 lg:py-5 lg:px-7 rounded-2xl font-bold lg:text-xl'
+          >
+            More Details
+          </Link>
     </section>
   );
 };

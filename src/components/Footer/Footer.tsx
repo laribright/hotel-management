@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className='mt-16'>
       <div className='container mx-auto px-4'>
-        <Link href='/' className='font-black text-tertiary-dark'>
-          Hotelzz
+        <Link href='/' className='font-black textLogo'>
+          Andapp
         </Link>
 
         <h4 className='font-semibold text-[40px] py-6'>Contact</h4>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='bg-tertiary-light h-10 md:h-[70px] mt-16 w-full bottom-0 left-0' />
+      <div className='searchBar h-10 md:h-[70px] mt-16 w-full bottom-0 left-0' />
     </footer>
   );
 };
